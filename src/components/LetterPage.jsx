@@ -25,7 +25,7 @@ export default function LetterPage({ setCurrentPage }) {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {[1, 2, 3].map((i) => (
+          {[1,2,3].map((i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, rotate: -8 + Math.random() * 16, y: 30 }}
@@ -48,7 +48,7 @@ export default function LetterPage({ setCurrentPage }) {
                 <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-pink-50 to-purple-50">
                   {/* Save the photos with name like 1.jpg, 2.jpg ... and change the src to this - /images/${i}.jpg */}
                   <img
-                    src={`/images/1.jpg`}
+                    src={`/images/${i}.jpg`}
                     alt={`Beautiful memory ${i}`}
                     className="w-full h-36 object-cover"
                   />
